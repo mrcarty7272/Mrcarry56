@@ -1,8 +1,9 @@
 [providers]
 chromium = "latest"
+python = "3.10"
 
 [phases.setup]
-nixPkgs = ["chromium"]
+nixPkgs = ["chromium", "python310", "python310Packages.pip"]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
