@@ -1,10 +1,7 @@
 providers = ["python"]
 
-[phases.setup]
-nixPkgs = ["chromium"]
-
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip3 install -r requirements.txt"]
 
-[phases.start]
-cmd = "python3 bot.py"
+[start]
+cmd = "python3 main.py"
